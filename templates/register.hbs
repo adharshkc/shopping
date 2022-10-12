@@ -1,0 +1,101 @@
+<style>
+	body{
+		background-size:cover ;
+		height: 100%;
+		background-image: url("https://kaboompics.com/cache/9/6/d/f/c/96dfca940b8cfad78d87caabd38787cc7e5622f2.jpeg");
+	}
+    .form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0, 0, 0, 0.641);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width: 106px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px    #1207031f;
+	border-radius: 30px;
+}
+
+.toggle-btn
+{
+	font-size: larger;
+    padding: 10px 24px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e48e2d;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	color: white;
+	width: 100%;
+	padding:10px 9px;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid rgb(235, 224, 224);
+	outline:none;
+	background: transparent;
+   
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin-top: 30px;
+	background: #f7aa53;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    margin-left: 65px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+</style>
+    <div class="form-box">
+        <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button' class='toggle-btn'>Register</button>
+            
+        </div>
+        <form id='login' class='input-group-login' method="post" action="/register">
+            <input type='text' name="email" class='input-field' placeholder='Email Id' required>
+            <input type='password' name="password" class='input-field' placeholder='Enter Password' required>
+            <input type='checkbox' class='check-box'><span style="color: rgba(255, 255, 255, 0.767);">Remember Password</span><br>
+			
+            <button type='submit' class='submit-btn'>Register</button>
+			<p style="color: rgba(227, 196, 125, 0.767); font-size:medium; margin-top:40px; margin-left:85px; font:bolder; ">New User? <a href="/register" style="text-decoration:none; color:rgb(164, 236, 212)"> Register here</a></p>
+        </form>
+
